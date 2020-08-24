@@ -1,0 +1,91 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  font-size:60%;
+}
+
+.Pomodoro{
+  padding:3rem;
+}
+
+.Pomodoro .Timer{
+  font-size:4rem;
+  margin:1rem;
+  border-bottom: .5rem solid black;
+}
+
+.Pomodoro .alert{
+  font-size:2rem;
+  padding:2rem;
+
+}
+
+
+.Pomodoro .alert.work{
+  font-size:2rem;
+  padding:1rem;
+  border-radius:1rem;
+  background-color:#82eb4d;
+}
+
+.Pomodoro .alert.shortBreak{
+  border-radius:1rem;
+  background-color:#fcc471;
+  
+}
+
+.Pomodoro .alert.longBreak{
+  border-radius:1rem;
+  background: #f5713d;
+  
+}
+
+.Pomodoro button{
+  background: #f5713d;
+  border:1px solid black;
+  padding:.5rem;
+  margin:1px 10px;
+  box-shadow:2px 1px 1px rgba(0, 0, 0, 0.5);
+  cursor:pointer;
+  display:inline-block;
+  text-align:center;
+}
+
+.Pomodoro button.start{
+  background:#82eb4d;
+}
+
+.Pomodoro button.short{
+  background:#fdbd5c;
+}
+
+
+.Pomodoro button:hover{
+  transition:.2s ease;
+  transform:scale(1.04);
+}
+
+.Pomodoro .alert.buz{
+  border-radius:1rem;
+  background: #ff4c4f;
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97)  infinite;
+}
+
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
